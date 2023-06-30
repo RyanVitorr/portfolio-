@@ -4,22 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Portfólio</title>
 </head>
 <body>
     <header>
-        <span></span>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
         <menu id="menu">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Sobre</a></li>   
-            </ul>
+            <nav class="navegation">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
         </menu>
     </header>
 
     <main>
+        <section id="bem-vindo">
+            <h1>Hola, sejá bem vindo(a), me chamo Ryan e esse é o meu Portfólio.</h1>
+            
+            <button class="btn1">
+                Meus Projetos
+            </button>
+        </section>
 
+        <section id="sobre-mim">
+            <div class="infos">
+                <h1>Sobre Mim:</h1>
+                <p>Me chamo Ryan Vitor e tenho 20 anos, faço faculdade de análise e desenvolvimento de sistemas (ads), e estou estudando para ser um desenvolvedor Front-End.</p>
+            </div>
+
+            <div class="infos">
+                <h3>Minhas Habilidades:</h3>
+
+                <div id="habilidades">
+                    <ul>
+                        <li>Html5</li>
+                        <li>CSS3</li>
+                    </ul>
+
+                    <iframe src="paginas/home.html" name="tela" id="tela" frameborder="0">
+                        
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h1>Meus Projétos:</h1>
+        </section>
     </main>
+    
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            }
+            else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
