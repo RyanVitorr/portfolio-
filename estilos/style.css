@@ -33,7 +33,6 @@ menu {
 }
 
 
-
 nav> ul > li {
     padding: 10px;
     border: 1px solid grey;
@@ -44,6 +43,7 @@ nav > ul > li > a {
     display: block;
     text-decoration: none;
     color: white;
+    width: 100px;
 }
 
 section#bem-vindo {
@@ -92,7 +92,19 @@ div#habilidades > ul > li {
     padding: 10px 10px;
 }
 
+div#habilidades > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
 div#habilidades > iframe {
     overflow: hidden;
-    
+}
+
+section#projetos {
+    margin-top: 2em;
+}
+
+section#projetos > h1 {
+    text-align: center;
 }
