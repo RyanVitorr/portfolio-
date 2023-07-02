@@ -2,13 +2,25 @@
 
 /* mobile first */
 
+
+/*
+    CORES: 
+
+    Preto
+    Azul-neon
+    Branco
+    Verde (talvez)
+
+*/
+
 * {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body, html {
-    background-color: black;
+    background-color: rgb(18, 18, 19);
     color: white;
 
     width: 100vw;
@@ -17,7 +29,8 @@ body, html {
 
 header {
     display: block;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgba(5, 182, 252, 0.801);
+    background-color: black;
 }
 
 header > span {
@@ -29,13 +42,13 @@ header > span {
 
 menu {
     display: none;
-    border: 1px solid gray;
+    border: 1px solid rgba(5, 182, 252, 0.801);
 }
 
 
 nav> ul > li {
     padding: 10px;
-    border: 1px solid grey;
+    border: 1px solid rgba(5, 182, 252, 0.801);
     list-style: none;
 }
 
@@ -48,31 +61,54 @@ nav > ul > li > a {
 
 section#bem-vindo {
     text-align: center;
-    padding: 2em 0;
-    border-bottom: 1px solid grey;
+    height: 150px;
+    border-bottom: 1px solid rgba(5, 182, 252, 0.801);
+    margin-top: 4em;
 }
 
-section#bem-vindo > h1 {
-    text-align: justify;
-    text-indent: 20px;
-    padding: 0px 10px;
-}
 
 section .btn1 {
+    background-color: rgba(5, 182, 252, 0.801);
+    color: black;
     margin-top: 2.5em;
     width: 30%;
     height: 35px;
     border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 section#sobre-mim {
     width: 100vw;
 }
 
-div.infos > h1, h3 {
+div#infos-pessoal {
+    align-items: center;
+    justify-content: center;
+    align-items: start;  
+}
+
+div#img-sobre-mim {
+    display: none;  
+}
+
+div#text-sobre-mim {
+    margin: 2em;
+}
+
+div#text-sobre-mim > h1 {   
+    color: rgba(5, 182, 252, 0.801); 
+}
+
+div#text-sobre-mim > p {
+    margin-top: 1.5em;
+}
+
+div.infos > h1 {
     display: block;
-    text-align: center;
-    margin: 1.2em 0px;
+    text-align: left;
+    margin: 2em 0 1em 30px;
+    color: rgba(5, 182, 252, 0.801); 
 }
 
 div.infos > p {
@@ -89,7 +125,7 @@ div#habilidades {
 div#habilidades > ul > li {
     list-style: none;
     margin: 30px;
-    padding: 10px 10px;
+    padding: 5px 10px;
 }
 
 div#habilidades > ul > li > a {
@@ -99,12 +135,9 @@ div#habilidades > ul > li > a {
 
 div#habilidades > iframe {
     overflow: hidden;
+    margin-top: 20px;
 }
 
 section#projetos {
     margin-top: 2em;
-}
-
-section#projetos > h1 {
-    text-align: center;
 }
