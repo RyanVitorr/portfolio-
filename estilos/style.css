@@ -28,7 +28,7 @@ body, html {
 }
 
 header {
-    display: block;
+    
     border-bottom: 1px solid rgba(5, 182, 252, 0.801);
     background-color: black;
 }
@@ -78,66 +78,44 @@ section .btn1 {
     cursor: pointer;
 }
 
+
 section#sobre-mim {
     width: 100vw;
 }
 
-div#infos-pessoal {
-    align-items: center;
-    justify-content: center;
-    align-items: start;  
+div .img-sobre-mim {
+    display: none;
 }
 
-div#img-sobre-mim {
-    display: none;  
+.infos {
+    color: rgba(5, 182, 252, 0.801);
+    margin: 30px 0 0 20px;
 }
 
-div#text-sobre-mim {
-    margin: 2em;
+div.traco {
+    width: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.568);
+    margin: 0 0 30px 20px;
 }
 
-div#text-sobre-mim > h1 {   
-    color: rgba(5, 182, 252, 0.801); 
-}
-
-div#text-sobre-mim > p {
-    margin-top: 1.5em;
-}
-
-div.infos > h1 {
-    display: block;
-    text-align: left;
-    margin: 2em 0 1em 30px;
-    color: rgba(5, 182, 252, 0.801); 
-}
-
-div.infos > p {
-    text-align: justify;
-    text-indent: 20px;
-    padding: 0px 10px;
+.infos-p {
+    text-align: center;
 }
 
 div#habilidades {
-    display: flex;
+    width: 100vw;
 }
 
-
-div#habilidades > ul > li {
-    list-style: none;
-    margin: 30px;
-    padding: 5px 10px;
+div#card-habi {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
-div#habilidades > ul > li > a {
-    text-decoration: none;
-    color: white;
-}
-
-div#habilidades > iframe {
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-section#projetos {
-    margin-top: 2em;
+div#card-habi:hover {
+    background: url(../img/nyan-cat-1.gif);
+    background-size: cover;
 }
