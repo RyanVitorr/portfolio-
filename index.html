@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <div id="burguer" class="material-icons" onclick="clickMenu()">menu</div>
         <menu id="menu">
             <nav class="navegation">
                 <ul>
@@ -52,27 +52,86 @@
                 <div class="traco"></div>
 
                 <div id="card-habi" class="habi-1">
+                    <div class="descricao-habi">
+                        <div class="img-descricao">
+                            <img class="img-icones" src="img/icons8-html-48.png" alt="ícone do HTML5">
 
+                            <p>HTML5</p>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, facilis fuga! Odit dolore quos consequatur fugit optio dicta ut modi labore, et alias delectus voluptatum explicabo maiores laborum consequuntur repellendus!</p>
+                    </div>
                 </div>
 
                 <div id="card-habi" class="habi-2">
+                    <div class="descricao-habi">
+                        <div class="img-descricao">
+                            <img class="img-icones" src="img/icons8-css-48.png" alt="ícone do HTML5">
 
+                            <p>CSS3</p>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium dolore adipisci. Ipsum maxime accusantium placeat labore tempora cum, recusandae modi voluptate nostrum quibusdam vitae ab, sapiente praesentium culpa voluptatibus.</p>
+                    </div>
                 </div>
 
                 <div id="card-habi" class="habi-3">
-
+                    <div class="descricao-habi">
+                        <img src="$" alt="">
+                    </div>
                 </div>
                 
             </div>
         </section>
 
         <section id="projetos">
-            <div class="infos">
-                <h1>Meus Projétos:</h1>
-            </div>
+            <h1 class="infos">Meus Projétos:</h1>
+            <div class="traco"></div>
+            
+            <div id="local-cards">
+
+                <div id="card-projetos">
+
+                </div>
+
+                <div id="card-projetos">
+
+                </div>
+
+                <div id="card-projetos">
+
+                </div>
+
+
+                <span id="span" class="local-cards-2">
+
+                    <div id="card-projetos">
+
+                    </div>
+    
+                    <div id="card-projetos">
+    
+                    </div>
+    
+                    <div id="card-projetos">
+    
+                    </div>
+    
+                </span>
+
+                <button class="btn-2" id="botao" onclick="clickSpan()">
+                    Ver mais
+                </button>
+            </div>   
+
+
         </section>
     </main>
     
+
+
+
+
     <script>
         function clickMenu() {
             if (menu.style.display == 'block') {
@@ -80,6 +139,17 @@
             }
             else {
                 menu.style.display = 'block'
+            }
+        }
+
+
+
+        function clickSpan() {
+            if (span.style.display == 'block') {
+                span.style.display = 'none'
+            }
+            else {
+                span.style.display = 'block'
             }
         }
     </script>
