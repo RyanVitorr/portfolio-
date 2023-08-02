@@ -3,155 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mobileFirst.css">
     <link rel="stylesheet" href="estilos/mediaquery.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Portfólio</title>
 </head>
 <body>
     <header>
-        <div id="burguer" class="material-icons" onclick="clickMenu()">menu</div>
-        <menu id="menu">
-            <nav class="navegation">
+        <div class="navegation">
+            <div class="logo">
+                <p>Portfólio</p>
+            </div>
+            
+            <nav class="nav-menu">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li>Início</li>
+                    <li>Sobre Mim</li>
+                    <li>Projetos</li>
                 </ul>
             </nav>
-        </menu>
+
+            <div class="menu">
+                <span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="bem-vindo">
-            <h1>Hola, sejá bem vindo(a) ao meu Portfólio.</h1>
-            
-            <button class="btn1">
-                Meus Projetos
-            </button>
-        </section>
+        <section class="home">
+            <div class="home-text">
+                <h1>R.V</h1>
+                <p>Seja bem vindo(a) ao meu Pportfólio!</p>
 
-        <section id="sobre-mim">
-           
-            <div id="infos-pessoal">
-                <div id="img-sobre-mim">
-                    <img class="img-sobre-mim" src="img/img-exemplo-alien.png" alt="">
-                </div>
-               
-                <div id="text-sobre-mim">
-                    <h1 class="infos">Sobre Mim:</h1>
-                    <div class="traco"></div>
-                   
-                    <p class="infos-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas doloremque recusandae nisi modi placeat nesciunt excepturi. Magnam facere voluptatibus molestias quidem, debitis repellendus culpa corrupti repellat eum quisquam optio maxime..</p>
+                <div class="bnt-1">
+                    <p>Projetos</p>
                 </div>
             </div>
-            
-
-            <div id="Habilidades" >
-                <h1 class="infos">Minhas Habilidades:</h1>
-                <div class="traco"></div>
-
-                <div id="card-habi" class="habi-1">
-                    <div class="descricao-habi">
-                        <div class="img-descricao">
-                            <img class="img-icones" src="img/icons8-html-48.png" alt="ícone do HTML5">
-
-                            <p>HTML5</p>
-                        </div>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, facilis fuga! Odit dolore quos consequatur fugit optio dicta ut modi labore, et alias delectus voluptatum explicabo maiores laborum consequuntur repellendus!</p>
-                    </div>
-                </div>
-
-                <div id="card-habi" class="habi-2">
-                    <div class="descricao-habi">
-                        <div class="img-descricao">
-                            <img class="img-icones" src="img/icons8-css-48.png" alt="ícone do HTML5">
-
-                            <p>CSS3</p>
-                        </div>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium dolore adipisci. Ipsum maxime accusantium placeat labore tempora cum, recusandae modi voluptate nostrum quibusdam vitae ab, sapiente praesentium culpa voluptatibus.</p>
-                    </div>
-                </div>
-
-                <div id="card-habi" class="habi-3">
-                    <div class="descricao-habi">
-                        <img src="$" alt="">
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <section id="projetos">
-            <h1 class="infos">Meus Projétos:</h1>
-            <div class="traco"></div>
-            
-            <div id="local-cards">
-
-                <div id="card-projetos">
-
-                </div>
-
-                <div id="card-projetos">
-
-                </div>
-
-                <div id="card-projetos">
-
-                </div>
-
-
-                <span id="span" class="local-cards-2">
-
-                    <div id="card-projetos">
-
-                    </div>
-    
-                    <div id="card-projetos">
-    
-                    </div>
-    
-                    <div id="card-projetos">
-    
-                    </div>
-    
-                </span>
-
-                <button class="btn-2" id="botao" onclick="clickSpan()">
-                    Ver mais
-                </button>
-            </div>   
-
-
         </section>
     </main>
-    
-
-
-
-
-    <script>
-        function clickMenu() {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none'
-            }
-            else {
-                menu.style.display = 'block'
-            }
-        }
-
-
-
-        function clickSpan() {
-            if (span.style.display == 'block') {
-                span.style.display = 'none'
-            }
-            else {
-                span.style.display = 'block'
-            }
-        }
-    </script>
 </body>
 </html>
