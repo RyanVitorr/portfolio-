@@ -9,38 +9,90 @@
 </head>
 <body>
     <header>
-        <div class="navegation">
+        <div id="navegation">
             <div class="logo">
                 <p>Portfólio</p>
             </div>
             
             <nav class="nav-menu">
                 <ul>
-                    <li>Início</li>
-                    <li>Sobre Mim</li>
-                    <li>Projetos</li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre Mim</a></li>
+                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#">Projetos</a></li>
                 </ul>
             </nav>
 
             <div class="menu">
-                <span class="barra"></span>
-                <span class="barra"></span>
-                <span class="barra"></span>
+                <span id="b-1" class="barra"></span>
+                <span id="b-2" class="barra"></span>
+                <span id="b-3" class="barra"></span>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="home">
+        <section id="home">
             <div class="home-text">
-                <h1>R.V</h1>
-                <p>Seja bem vindo(a) ao meu Pportfólio!</p>
+                <h1>Seja bem vindo(a) ao meu portfólio!</h1>
 
                 <div class="bnt-1">
-                    <p>Projetos</p>
+                    <a href="#">
+                        <p>Projetos</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobreMim">
+            <div class="sobreMim-text">
+                <h2>Sobre Mim:</h2>
+                <span class="barraDec"></span>
+                
+                <p>Meu nome é Ryan Vitor, sou um estudante de ADS (Análise e Desenvolvimento de Sistemas)...</p>
+                
+                <div class="spanComent">
+                    <span >/* Passe o mouse por cima das infos */</span>
+                </div>
+                
+                <div class="infos">
+                    <ul class="list">
+                        <li><strong>Nome:</strong> Ryan Vitor</li>
+                        <li><strong>Número:</strong> +55 (81) 98222-6399</li>
+                        <li><strong>Experiencia:</strong> 6 meses</li>
+                    </ul>
+
+                    <ul class="list">
+                        <li><strong>Idade:</strong> 20 anos</li>
+                        <li><strong>Endereço:</strong> Recife, Pernambuco</li>
+                        <li><strong>Área de atuação:</strong> Front-End</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <div class="minhasHabi">
+                <h2>Minhas Habilidades:</h2>
+                <span class="barraDec"></span>
+                
+                <div class="cardHabi">
+                   
+                    <div class="cards">
+                        <h3>HTML5</h3>
+                    </div>
+                  
+                    <div class="cards">
+                        <h3>CSS3</h3>
+                    </div>
+                  
+                    <div class="cards">
+                        <h3>JavaScript</h3>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="script/script.js"></script>
 </body>
 </html>

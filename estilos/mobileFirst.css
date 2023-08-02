@@ -18,40 +18,47 @@ body {
     color: white;
 }
 
-.navegation {
+/* header */
+#navegation {
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
-    height: 50px;
 }
 
-.navegation .logo {
-    margin-left: 15px;
+#navegation .logo {
+    margin: 15px 0 10px 15px;
     font-style: italic;
 }
 
-.navegation .nav-menu {
+#navegation .nav-menu {
     display: none;
-    position: fixed;
-    top: 70px;
-    left: 44vw;
-    background: rgb(14, 15, 17);;
+    background: rgb(14, 15, 17);
 }
 
-.navegation .nav-menu > ul {
+#navegation .nav-menu > ul {
     text-align: center;
+    margin: 60px 30px 0 0;
+    
 }
 
-.navegation .nav-menu > ul > li{
+#navegation .nav-menu > ul > li{
    margin-bottom: 25px;
 }
 
-.navegation .menu {
-    margin-right: 15px;
-    margin-bottom: 10px;
+#navegation .nav-menu > ul > li > a {
+    color: white;
 }
 
-.navegation .menu .barra {
+#navegation .nav-menu > ul > li > a:hover {
+    color: var(--azul);
+}
+
+#navegation .menu {
+    cursor: pointer;
+    margin: 11px 15px 0 0;
+}
+
+#navegation .menu .barra {
     display: block;
     width: 20px;
     height: 3px;
@@ -59,5 +66,114 @@ body {
     margin: 3px auto;
 }
 
-.menu .barra:nth-child(1) { background-color: var(--azul);}
-.menu .barra:nth-child(3) {background-color: var(--azul);}
+#navegation .menu .barra:nth-child(1) { background-color: var(--azul);}
+#navegation .menu .barra:nth-child(3) {background-color: var(--azul);}
+
+/* main */
+
+/* bem vindo */
+#home {
+    height: 300px;
+    background: url(../img/codigo-html-background.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#home .home-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+}
+
+#home .home-text > h1 {
+    color: var(--azul);
+    margin-bottom: 30px;
+}
+
+#home .home-text .bnt-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 70px; 
+    height: 40px;
+    width: 140px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.678);
+    background: var(--azul); 
+    cursor: pointer; 
+}
+
+#home .home-text .bnt-1 > a {
+    color: white;
+}
+
+/* sobre mim */
+
+#sobreMim {
+    padding: 20px;
+}
+
+.barraDec {
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin: 2px 0 25px 0;
+    background-color: var(--azul);
+}
+
+#sobreMim .sobreMim-text > p {
+    text-align: justify;
+    font-size: 0.9em;
+    margin-bottom: 50px;
+}
+
+#sobreMim .sobreMim-text .spanComent {
+    text-align: center;
+    color: rgba(0, 128, 0, 0.377);
+}
+
+#sobreMim .sobreMim-text .infos {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid var(--azul);
+}
+
+.sobreMim-text .infos .list:nth-child(2) {
+    margin-left: 100px;
+}
+
+.sobreMim-text .infos .list > li{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/* habilidades */
+
+#habilidades {
+    padding: 20px;
+}
+
+.minhasHabi .cardHabi {
+    display: flex;
+    justify-content: space-between;
+}
+
+.minhasHabi .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 50% 50%;
+    border: 1px solid var(--azul);
+    cursor: pointer;
+    box-sizing: border-box;
+}
