@@ -35,4 +35,13 @@ function animacaoMenu() {
     
 }
 
-const cardHabi = document.querySelector('cards');
+const cardHabi = document.querySelectorAll('.cards');
+const cardH = document.querySelectorAll('.cards > h3');
+
+cardHabi.addEventListener('mouseover', () => {
+    mostrarHabilidade();
+})
+
+function mostrarHabilidade() {
+    cardH.
+}
