@@ -35,13 +35,10 @@ function animacaoMenu() {
     
 }
 
-const cardHabi = document.querySelectorAll('.cards');
-const cardH = document.querySelectorAll('.cards > h3');
-
-cardHabi.addEventListener('mouseover', () => {
-    mostrarHabilidade();
-})
+const card1 = document.getElementById('card1');
+const cardH = document.getElementById('text-card1');
 
 function mostrarHabilidade() {
-    cardH.
+   
+    cardH.innerText = '80%';
 }
