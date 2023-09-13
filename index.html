@@ -1,98 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilos/mobileFirst.css">
-    <link rel="stylesheet" href="estilos/mediaquery.css">
     <title>Portfólio</title>
 </head>
 <body>
     <header>
-        <div id="navegation">
-            <div class="logo">
-                <p>Portfólio</p>
+        <div id="header-div">
+            <span>Portfólio</span>
+            <div id="menu">
+                <span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span>
             </div>
-            
-            <nav class="nav-menu">
+            <nav id="principal-nav">
                 <ul>
                     <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre Mim</a></li>
-                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">skills</a></li>
                     <li><a href="#">Projetos</a></li>
                 </ul>
             </nav>
-
-            <div class="menu">
-                <span id="b-1" class="barra"></span>
-                <span id="b-2" class="barra"></span>
-                <span id="b-3" class="barra"></span>
+            <nav id="nav-lateral">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">skills</a></li>
+                    <li><a href="#">Projetos</a></li>
+                </ul>
+            </nav>
+            <div id="botao-inicio">
+                <i class="bi bi-arrow-up-circle-fill"></i>
             </div>
         </div>
     </header>
-
     <main>
-        <section id="home">
-            <div class="home-text">
-                <h1>Seja bem vindo(a) ao meu portfólio!</h1>
+        <div id="principal">
+            <section id="principal-img">
 
-                <div class="bnt-1">
-                    <a href="#">
-                        <p>Projetos</p>
-                    </a>
-                </div>
-            </div>
-        </section>
+            </section>
+            
+            <section id="principal-text">
+                <p>Holá,</p>
+                <h1>Me chamo Ryan, <br> Sou um desenvolvedor Front-end.</h1>
+                <p>Seja bem vindo(a) ao meu portfólio.</p>
 
-        <section id="sobreMim">
-            <div class="sobreMim-text">
-                <h2>Sobre Mim:</h2>
-                <span class="barraDec"></span>
-                
-                <p>Meu nome é Ryan Vitor, sou um estudante de ADS (Análise e Desenvolvimento de Sistemas)...</p>
-                
-                <div class="spanComent">
-                    <span >/* Passe o mouse por cima das infos */</span>
-                </div>
-                
-                <div class="infos">
-                    <ul class="list">
-                        <li><strong>Nome:</strong> Ryan Vitor</li>
-                        <li><strong>Número:</strong> +55 (81) 98222-6399</li>
-                        <li><strong>Experiencia:</strong> 6 meses</li>
-                    </ul>
-
-                    <ul class="list">
-                        <li><strong>Idade:</strong> 20 anos</li>
-                        <li><strong>Endereço:</strong> Recife, Pernambuco</li>
-                        <li><strong>Área de atuação:</strong> Front-End</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="habilidades">
-            <div class="minhasHabi">
-                <h2>Minhas Habilidades:</h2>
-                <span class="barraDec"></span>
-                
-                <div class="cardHabi">
+                <div id="sobre-e-icons">
+                    <div id="principal-sobre"><p>Sobre Mim</p></div>
                    
-                    <div id="card1" class="cards" onmouseover="mostrarHabilidade()">
-                        <h3 id="text-card1">HTML5</h3>
-                    </div>
-                  
-                    <div id="card2" class="cards">
-                        <h3>CSS3</h3>
-                    </div>
-                  
-                    <div id="card3" class="cards">
-                        <h3>JavaScript</h3>
+                    <div id="principal-icons">
+                        <i class="bi bi-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
                     </div>
                 </div>
-            </div>
-        </section>
+
+            </section>
+        </div>
     </main>
-    <script src="script/script.js"></script>
 </body>
 </html>
