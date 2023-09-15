@@ -97,8 +97,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
 }
 
 
@@ -106,26 +104,26 @@ main {
     display: flex;
     align-items: center;
     justify-content: center; 
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    padding: 0 35px;
 }   
 
 #principal-text {
     display: flex;
     flex-direction: column;
     gap: 3px;
-    padding: 35px;
+    margin-bottom: 30px;
 }
 
 #principal-text > p {font-size: 20px; color: var(--cor4);}
 #principal-text > h1 {color: var(--cor3); font-size: 30px;}
 
-#sobre-e-icons{
-    width: 100%; 
+#sobre-e-icons{ 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -157,4 +155,74 @@ main {
 /* sobre */
 
 #sobre {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+    height: 100%;
+}
+
+.linha-titulo {
+    display: block;
+    width: 2.3rem; 
+    height: 2px; 
+    background-color: var(--cor3);
+}
+
+#sobre-infos {
+    display: grid;
+    gap: 25px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#sobre-direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra-sobre{
+    width: 80px;
+    height: 3px;
+    margin: 2.5px;
+    transform: rotateY('45deg');
+}
+.barra-sobre:nth-child(1) 
+{
+    width: 50px; 
+    background-color: var(--cor3);
+}
+.barra-sobre:nth-child(2){background-color: var(--cor4);} 
+#sobre-direita > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--cor2);
+}
+
+#sobre-esquerda{
+    display: grid;
+    gap: 35px;
+}
+#esquerda-text {
+    text-align: center;
+}
+
+#redes-infos {
+    display: grid;
+    gap: 10px;
+}
+
+#redes-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+#redes-icons > i {
+    font-size: 25px;
+    color: var(--cor4);
 }
