@@ -156,34 +156,13 @@ main {
 /* sobre */
 
 #sobre {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    padding: 0 35px;
-    height: 100%;
-}
-
-.linha-titulo {
-    display: block;
-    width: 2.3rem; 
-    height: 2px; 
-    background-color: var(--cor3);
-}
-
-#sobre-infos {
-    display: grid;
-    gap: 25px;
-    width: 100%;
-    padding: 20px 0;
-}
-
-#sobre-direita {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 180px;
+    gap: 25px;
+    height: 100vh;
 }
+
 
 #barra-cor-img {
     display: flex;
@@ -211,29 +190,4 @@ main {
     border-radius: 50%;
     background-color: var(--cor2);
     overflow: hidden;
-}
-
-#sobre-esquerda{
-    display: grid;
-    gap: 35px;
-}
-#esquerda-text {
-    text-align: center;
-}
-
-#redes-infos {
-    display: grid;
-    gap: 10px;
-}
-
-#redes-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-}
-
-#redes-icons > i {
-    font-size: 25px;
-    color: var(--cor4);
 }
