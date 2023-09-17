@@ -14,7 +14,8 @@
     --cor2: black;
     --cor3: rgba(78, 117, 190, 0.74);
     --cor4: rgb(80, 80, 80);
-    --cor5: rgba(221, 221, 221, 0.849);;
+    --cor5: rgba(221, 221, 221, 0.849);
+    --cor6: rgba(240, 239, 239, 0.973);
 }
 
 body {
@@ -215,8 +216,8 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: var(--cor2);
     overflow: hidden;
+    object-fit: cover;
 }
 
 #redes-infos {
@@ -263,8 +264,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 120px;
-    width: 100px;
+    height: 130px;
+    width: 120px;
     gap: 10px;
     border-radius: 20px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
@@ -302,11 +303,35 @@ main {
 .projetos-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
+    height: 200px;
     width: 100%;
     gap: 10px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+    background-color: var(--cor6);
+    overflow: hidden;
+}
+
+.projetos-card > a {display: grid; gap: 25px; color: var(--cor4);}
+
+.desc-projeto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.desc-projeto > p {font-size: 16px;}
+
+.tecnologias-projeto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.tecnologias-projeto > i {
+    font-size: 30px;
+    color: var(--cor3);
 }
