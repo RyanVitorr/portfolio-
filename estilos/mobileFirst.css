@@ -159,10 +159,37 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 25px;
+    gap: 65px;
     height: 100vh;
+    padding: 0 35px;
 }
 
+#sobre-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+.linha-titulo {
+    display: block;
+    width: 2.5rem;
+    height: 2px;
+    background-color: var(--cor3);
+}
+
+#img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 35px;
+}
+
+#sobre-text {
+    padding: 0 35px;
+}
 
 #barra-cor-img {
     display: flex;
@@ -190,4 +217,96 @@ main {
     border-radius: 50%;
     background-color: var(--cor2);
     overflow: hidden;
+}
+
+#redes-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#redes-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+}
+
+#redes-icons > i {
+    font-size: 25px;
+    color: var(--cor4);
+}
+#redes-icons > i:hover {color: var(--cor3);}
+
+/* skils */
+
+#skils {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 35px;
+    padding: 20px 35px;
+}
+
+#area-skils {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 10px 0;
+}
+
+.skil-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100px;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+}
+
+.skil-card > i {
+    font-size: 35px;
+    color: var(--cor4);
+}
+
+.nivel-skill > i {
+    color: var(--cor3);
+}
+
+/* projetos */
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 35px;
+    padding: 35px;
+}
+
+
+#projetos-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 10px;
+}
+
+.projetos-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
 }
