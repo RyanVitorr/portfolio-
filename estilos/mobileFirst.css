@@ -165,43 +165,31 @@ main {
 
 #sobre {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 65px;
-    height: 100vh;
     padding: 0 35px;
 }
 
-#sobre-infos {
+#conteudo-sobre {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 35px;
 }
 
-.linha-titulo {
+.linha-titulo{
     display: block;
-    width: 2.5rem;
+    width: 2rem;
     height: 2px;
     background-color: var(--cor3);
 }
 
-#img-text {
+#infos-sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 35px;
-    width: 360px;
+    gap: 25px;
 }
 
-#sobre-text {
-    padding: 0 35px;
-}
-
-#barra-cor-img {
+#area-azul-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,7 +200,7 @@ main {
     overflow: hidden;
 }
 
-#barra-branca-img{
+#area-branca-img {
     width: 125px;
     height: 125px;
     border-radius: 50%;
@@ -221,7 +209,7 @@ main {
     overflow: hidden;
 }
 
-#barra-branca-img > img {
+#area-branca-img > img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -229,183 +217,170 @@ main {
     object-fit: cover;
 }
 
-#redes-infos {
+#text-sobre {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    align-items: center;
+    text-align: center;
+    max-width: 425px;
+    gap: 10px;
 }
 
-#redes-icons {
+
+/* redes */
+
+#titulo-redes {
+    margin-top: 25px;
+}
+
+#infos-redes {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     gap: 25px;
+    margin-bottom: 10px;
 }
 
-#redes-icons > a {
-    font-size: 25px;
-    color: var(--cor4);
-    cursor: pointer;
-}
-#redes-icons > a:hover {color: var(--cor3);}
+#infos-redes > a {color: var(--cor4);}
+#infos-redes > a:hover {color: var(--cor3);}
 
-/* skils */
+#infos-redes > a > i {font-size: 25px;}
+
+/* skills */
 
 #skills {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    gap: 35px;
-    padding: 20px 35px;
+    justify-content: center;
+    padding: 0 35px;
+    margin-top: 80px;
 }
 
-#area-skills {
+#conteudo-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 425px;
+}
+
+#infos-skills {
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
     gap: 25px;
-    padding: 10px 0;
+    padding: 1.2em
 }
 
-.skill-card {
+.card-skills {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 130px;
-    width: 120px;
-    gap: 8px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
-    cursor: pointer;
+    width: 100px;
+    height: 120px;
+    gap: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.281);
+    border-radius: 10px;
 }
 
-.skill-card > i {
-    font-size: 35px;
-    color: var(--cor4);
-}
-
-.nivel-skill > i {
-    color: var(--cor3);
-}
+.icone-skill > i {font-size: 25px;}
+.level-skill > i {color: var(--cor3);}
 
 /* projetos */
 
 #projetos {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    gap: 1rem;
-    padding: 15px 35px;
+    justify-content: center;
+    padding: 0 35px;
+    margin-top: 50px;
 }
 
-#titulo-projetos{height: 35px;}
+#conteudo-projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 425px;
+}
 
-#projetos-area {
+#projetos-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    gap: 25px;
     padding: 10px;
 }
 
-.projetos-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.card-projetos {
+    display: grid;
     justify-content: center;
+    width: 280px;
     height: 250px;
-    width: 100%;
-    gap: 1.5rem;
-    padding: 1rem;
-    border-radius: 20px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
-    background-color: var(--cor6);
-    overflow: hidden;
-    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
+    border-radius: 10px;
+    padding: 20px;
+    gap: 70px;
+    background-color: var(--cor7);
 }
 
-.projetos-card > a {display: grid; gap: 1rem; color: var(--cor4);}
+.card-projetos > a {display: grid; gap: 10px; cursor: pointer;}
 
-.desc-projeto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
+.nome-projeto > h4 {color: var(--cor4);}
 
-.desc-projeto > p {font-size: 16px;}
+.desc-projeto {height: auto; padding: 5px; text-align: center;}
+.desc-projeto > p {color: var(--cor4);}
 
 .tecnologias-projeto {
-    display: flex;
-    align-items: center;
+    display: flex; 
+    align-items: center; 
     justify-content: center;
-    height: auto;
     gap: 25px;
 }
 
-.tecnologias-projeto > i {
-    font-size: 30px;
-    color: var(--cor3);
-}
+.tecnologias-projeto > i{font-size: 25px; color: var(--cor4);}
+.tecnologias-projeto > i:hover{color: var(--cor3);}
 
-.status {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
-}
+.status-projeto{display: flex; gap: 25px;}
+.status-projeto > span {color: var(--cor4);}
+.status-projeto > p {color: var(--cor3);}
 
-.status > span {
-    color: var(--cor4);
-}
-.status > p {color: var(--cor3);}
+/* mais projetos */
 
-#mais-projetos {
+#mais-projetos{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-}
-
-
-/* ver mais  */
-
-#mais-projetos{
+    gap: 35px;
     padding: 10px;
-    overflow: hidden;
 }
 
 #area-mais {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 280px;
     height: 50px;
-    background-color: var(--cor6);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
     border-radius: 10px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
-    cursor: pointer;
+    background-color: var(--cor7);
 }
-#area-mais > a {color: var(--cor4);}
 
 #info-mais {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
 }
 
-#info-mais > i {font-size: 20px;}
+#info-mais > i {font-size: 25px; color: var(--cor4);}
+#info-mais > p {font-size: 20px; color: var(--cor4);}
+
 /* footer */
 
-footer {
-    display: flex;
-    align-items: center;
+#area-footer{ 
+    display: flex; 
+    align-items: center; 
     justify-content: center;
-    border-top: 1px solid var(--cor3);
+    border-top: 1px solid var(--cor4);
+    margin-top: 20px;
+    gap: 25px;
 }
