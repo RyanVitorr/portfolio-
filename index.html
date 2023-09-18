@@ -19,25 +19,26 @@
             </div>
             <nav id="principal-nav">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">skills</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a class="nav-nome" href="#header-div">Início</a></li>
+                    <li><a class="nav-nome" href="#sobre">Sobre</a></li>
+                    <li><a class="nav-nome" href="#skills">skills</a></li>
+                    <li><a class="nav-nome" href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
             <nav id="nav-lateral">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">skills</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#header-div">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
             <div id="botao-inicio">
-                <i class="bi bi-arrow-up-circle-fill"><a href="#principal"></a></i>
+                <a href="#header-div"><i class="bi bi-arrow-up-circle-fill"></i></a>
             </div>
         </div>
     </header>
+   
     <main>
         <div id="principal">
             <section id="principal-img">
@@ -46,15 +47,17 @@
             
             <section id="principal-text">
                 <p>Holá,</p>
-                <h1>Me chamo Ryan, <br> Sou um desenvolvedor Front-end.</h1>
+                <h1>Me chamo Ryan, <br> Sou um desenvolvedor Front-end. </h1>
                 <p>Seja bem vindo(a) ao meu portfólio.</p>
 
                 <div id="sobre-e-icons">
-                    <div id="principal-sobre"><p>Sobre Mim</p></div>
+                    <a href="#sobre">
+                        <div id="principal-sobre"><p>Sobre Mim</p></div>
+                    </a>
                    
                     <div id="principal-icons">
-                        <i class="bi bi-github"></i>
-                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://github.com/RyanVitorr" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ryan-vitor-5b0522288/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
 
@@ -89,20 +92,20 @@
                     <span class="linha-titulo"></span>
                 </div>
                 <div id="redes-icons">
-                    <i class="bi bi-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://github.com/RyanVitorr" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ryan-vitor-5b0522288/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </section>
         </div>
 
-        <div id="skils">
+        <div id="skills">
             <section id="titulo-skills">
-                <h2>Skils</h2>
+                <h2>Skills</h2>
                 <span class="linha-titulo"></span>
             </section>
           
-            <section id="area-skils">
-                <div class="skil-card">
+            <section id="area-skills">
+                <div class="skill-card">
                     <i class="fa-brands fa-html5"></i>
                     <div class="nivel-skill">
                         <i class="fa-solid fa-star"></i>
@@ -110,8 +113,9 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
+                    <p>Html5</p>
                 </div>
-                <div class="skil-card">
+                <div class="skill-card">
                     <i class="fa-brands fa-css3-alt"></i>
                     <div class="nivel-skill">
                         <i class="fa-solid fa-star"></i>
@@ -119,27 +123,31 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
+                    <p>Css3</p>
                 </div>
-                <div class="skil-card">
+                <div class="skill-card">
                     <i class="fa-brands fa-js"></i>
                     <div class="nivel-skill">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
+                    <p>JavaScript</p>
                 </div>
-                <div class="skil-card">
+                <div class="skill-card">
                     <i class="fa-brands fa-python"></i>
                     <div class="nivel-skill">
                         <i class="fa-solid fa-star"></i>
                     </div>
+                    <p>Python</p>
                 </div>
-                 <div class="skil-card">
+                 <div class="skill-card">
                     <i class="bi bi-filetype-sql"></i>
                     <div class="nivel-skill">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
+                    <p>SQL</p>
                 </div>
             </section>
         </div>
@@ -151,23 +159,72 @@
             </section>
 
             <section id="projetos-area">
+               
                 <div class="projetos-card">
-                    <a href="https://ryanvitorr.github.io/projeto-login/" target="_blank">
+                    <a href="https://ryanvitorr.github.io/PizzaShop/#first-section" target="_blank">
                         <div class="nome-projeto">
-                            <h4>Tela de Login</h4>
+                            <h4>PizzaShop</h4>
                         </div>
                         <div class="desc-projeto">
-                            <p>Tela de login de uma Floricultura, feita como exercício do curso de HTML5 e CSS3 do Curso em Vídeo.</p>
+                            <p>Landing page responsiva de uma pizzaria fictícia, feita com <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript</strong>.</p>
                         </div>
 
                         <div class="tecnologias-projeto">
                             <i class="fa-brands fa-html5"></i>
                             <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                       
+                        <div class="status">
+                            <span>Status:</span>
+                            <p>Finalizado.</p>
+                        </div>
+                    </a>
+                </div>
+               
+               
+                <div class="projetos-card">
+                    <a href="https://ryanvitorr.github.io/copia-instagram-v2/" target="_blank">
+                        <div class="nome-projeto">
+                            <h4>Cópia do Instagram</h4>
+                        </div>
+                        <div class="desc-projeto">
+                            <p>Uma cópia responsiva da interface web da rede social Instagram, feita com <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript</strong>.</p>
+                        </div>
+
+                        <div class="tecnologias-projeto">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+
+                        <div class="status">
+                            <span>Status:</span>
+                            <p>Em desenvolvimento.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+
+            <section id="mais-projetos">
+                <div id="area-mais">
+                    <a href="https://github.com/RyanVitorr" target="_blank">
+                        <div id="info-mais">
+                            <i class="bi bi-github"></i>
+                            <p>Ver mais projetos</p>
                         </div>
                     </a>
                 </div>
             </section>
         </div>
     </main>
+
+    <footer>
+        <div id="area-footer">
+            <p>Desenvolvido por: Ryan Vitor</p>
+        </div>
+    </footer>
+    <script src="script/menu.js"></script>
 </body>
 </html>
