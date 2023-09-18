@@ -317,7 +317,7 @@ main {
 .card-projetos {
     display: grid;
     justify-content: center;
-    width: 280px;
+    width: 285px;
     height: 250px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
     border-radius: 10px;
@@ -326,7 +326,7 @@ main {
     background-color: var(--cor7);
 }
 
-.card-projetos > a {display: grid; gap: 10px; cursor: pointer;}
+.card-projetos > a {display: grid; gap: 5px; cursor: pointer;}
 
 .nome-projeto > h4 {color: var(--cor4);}
 
